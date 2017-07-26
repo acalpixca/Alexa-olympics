@@ -1,4 +1,7 @@
-RecipeIntent where is {Item}
-RecipeIntent how can i find {Item}
-RecipeIntent how can i locate {Item}
+RecipeIntent where did the {Item} olympics take place
+RecipeIntent where did the {Item} olympics happen
+RecipeIntent where did the {Item} games take place
+RecipeIntent where did the {Item} games happen
+RecipeIntent which city hosted the {Item} olympics
+RecipeIntent which city hosted the {Item} games
 RecipeIntent {Item}
