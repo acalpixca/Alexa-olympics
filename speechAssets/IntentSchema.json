@@ -1,5 +1,9 @@
 {"intents": [
-    {"intent": "RecipeIntent", "slots": [{"name" : "Item", "type": "LIST_OF_ITEMS"}]},
+    /* {"intent": "RecipeIntent", "slots": [{"name" : "Item", "type": "LIST_OF_ITEMS"}]},
+		See https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/built-in-intent-ref/slot-type-reference
+		Utterances that map to a year (such as "next year") convert to a date containing just the year: 2016.
+	*/
+	{"intent": "RecipeIntent", "slots": [{"name" : "Item", "type": "AMAZON.DATE"}]},
     {"intent": "AMAZON.RepeatIntent"},
     {"intent": "AMAZON.HelpIntent"},
     {"intent": "AMAZON.StopIntent"},
