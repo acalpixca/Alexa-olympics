@@ -1,6 +1,8 @@
 'use strict';
 
 var Alexa = require('alexa-sdk');
+var AmazonDateParser = require('amazon-date-parser'); // Item is AMAZON.DATE and need this package to parse it to JS Date object.
+
 var APP_ID = 'amzn1.ask.skill.3ac95fba-aa3d-412a-a1e9-8bd1707a512d';// undefined; // TODO replace with your app ID (OPTIONAL).
 var recipes = require('./recipes');
 
