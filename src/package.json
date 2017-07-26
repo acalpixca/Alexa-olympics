@@ -1,0 +1,28 @@
+{
+  "name": "alexa-acu-points",
+  "version": "1.0.0",
+  "description": "Acupuncture Points",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexa/skill-sample-nodejs-howto.git"
+  },
+  "keywords": [
+    "Acupuncture",
+    "MTC",
+    "Acu"
+  ],
+  "author": "Eva Sanchez Guerrero <acalpixca@gmail.com> (http://www.techmex.es)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/alexa/skill-sample-nodejs-howto/issues"
+  },
+  "homepage": "https://github.com/alexa/skill-sample-nodejs-howto#readme",
+  "dependencies": {
+    "acu-logic": "^1.0.8",
+    "alexa-sdk": "^1.0.6"
+  }
+}
