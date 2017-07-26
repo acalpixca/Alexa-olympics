@@ -37,7 +37,8 @@ var handlers = {
         var itemName;
         if (itemSlot && itemSlot.value) {
             // itemName = itemSlot.value.toLowerCase();
-			itemName = new AmazonDateParser(itemSlot.value);
+			// itemName = new AmazonDateParser(itemSlot.value);
+			itemName = itemSlot.value;
 			// TODO mira si itemName es del palo 1992 para poder usarlo tal cual.
         }
 
@@ -93,12 +94,12 @@ var languageStrings = {
     "en": {
         "translation": {
             "RECIPES": recipes.RECIPE_EN_US,
-            "SKILL_NAME": "Acupuncture Points",
-            "WELCOME_MESSAGE": "Welcome to %s. I can help you locate acupuncture points. Ask, where\'s Kidney One? ... Now, what can I help you with.",
+            "SKILL_NAME": "Unofficial Olympic Cities",
+            "WELCOME_MESSAGE": "Welcome to %s. Would you like to know where the Olympic Games were held in a particular year?. Ask me, where did the 19 92 olympics take place? ... Now, what can I help you with.",
             "WELCOME_REPROMPT": "For instructions on what you can say, please say help me.",
-            "DISPLAY_CARD_TITLE": "%s  - Location of %s.",
-            "HELP_MESSAGE": "You can ask questions such as, where\'s Kidney One, or, you can say exit...Now, what can I help you with?",
-            "HELP_REPROMPT": "You can say things like, where\'s Kidney One, or you can say exit...Now, what can I help you with?",
+            "DISPLAY_CARD_TITLE": "%s  - Hosting City in %s.",
+            "HELP_MESSAGE": "You can ask questions such as, where did the 19 92 olympics take place, or, you can say exit...Now, what can I help you with?",
+            "HELP_REPROMPT": "You can say things like, where did the 19 92 olympics take place, or you can say exit...Now, what can I help you with?",
             "STOP_MESSAGE": "Goodbye!",
             "RECIPE_REPEAT_MESSAGE": "Try saying repeat.",
             "RECIPE_NOT_FOUND_MESSAGE": "I\'m sorry, I currently do not know ",
@@ -110,19 +111,19 @@ var languageStrings = {
     "en-US": {
         "translation": {
             "RECIPES" : recipes.RECIPE_EN_US,
-            "SKILL_NAME" : "Acupuncture Points"
+            "SKILL_NAME" : "Unofficial Olympic Cities"
         }
     },
     "en-GB": {
         "translation": {
             "RECIPES": recipes.RECIPE_EN_GB,
-            "SKILL_NAME": "Acupuncture Points"
+            "SKILL_NAME": "Unofficial Olympic Cities"
         }
     },
     "de": {
         "translation": {
             "RECIPES" : recipes.RECIPE_DE_DE,
-            "SKILL_NAME" : "Acupuncture Points",
+            "SKILL_NAME" : "Unofficial Olympic Cities",
             "WELCOME_MESSAGE": "Willkommen bei %s. Du kannst beispielsweise die Frage stellen: Welche Rezepte gibt es für eine Truhe? ... Nun, womit kann ich dir helfen?",
             "WELCOME_REPROMPT": "Wenn du wissen möchtest, was du sagen kannst, sag einfach „Hilf mir“.",
             "DISPLAY_CARD_TITLE": "%s - Rezept für %s.",
