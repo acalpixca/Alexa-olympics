@@ -2,6 +2,7 @@
 
 var Alexa = require('alexa-sdk');
 var AmazonDateParser = require('amazon-date-parser'); // Item is AMAZON.DATE and need this package to parse it to JS Date object.
+/* See https://medium.com/@niklongstone/alexa-amazon-date-and-js-5c8e819913b2 */
 
 var APP_ID = 'amzn1.ask.skill.3ac95fba-aa3d-412a-a1e9-8bd1707a512d';// undefined; // TODO replace with your app ID (OPTIONAL).
 var recipes = require('./recipes');
@@ -26,10 +27,18 @@ var handlers = {
         this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech'])
     },
     'RecipeIntent': function () {
-        var itemSlot = this.event.request.intent.slots.Item;
+		
+		/*
+		    var slotValue = this.event.request.intent.slots.date.value;
+    var dateRange = new AmazonDateParser(slotValue);
+		*/
+        //var itemSlot = this.event.request.intent.slots.Item;
+		var itemSlot = this.event.request.intent.slots.Item;
         var itemName;
         if (itemSlot && itemSlot.value) {
-            itemName = itemSlot.value.toLowerCase();
+            // itemName = itemSlot.value.toLowerCase();
+			itemName = new AmazonDateParser(itemSlot.value);
+			// TODO mira si itemName es del palo 1992 para poder usarlo tal cual.
         }
 
         var cardTitle = this.t("DISPLAY_CARD_TITLE", this.t("SKILL_NAME"), itemName);
