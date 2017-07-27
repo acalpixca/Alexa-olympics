@@ -1,7 +1,7 @@
 'use strict';
 
 var Alexa = require('alexa-sdk');
-var AmazonDateParser = require('amazon-date-parser'); // Item is AMAZON.DATE and need this package to parse it to JS Date object.
+//var AmazonDateParser = require('amazon-date-parser'); // Item is AMAZON.DATE and need this package to parse it to JS Date object.
 /* See https://medium.com/@niklongstone/alexa-amazon-date-and-js-5c8e819913b2 */
 
 var APP_ID = 'amzn1.ask.skill.8446be94-9149-461e-8332-1a5d53273ea7';// undefined; // TODO replace with your app ID (OPTIONAL).
@@ -48,6 +48,7 @@ var handlers = {
 
         if (recipe) {
             this.attributes['speechOutput'] = recipe;
+			// this.attributes['speechOutput'] = "Eeeh Macarena";
             this.attributes['repromptSpeech'] = this.t("RECIPE_REPEAT_MESSAGE");
 			this.emit(':tellWithCard', cardTitle, cardTitle, recipe, recipe);
         } else {
@@ -102,9 +103,9 @@ var languageStrings = {
             "HELP_REPROMPT": "You can say things like, where did the 19 92 olympics take place, or you can say exit...Now, what can I help you with?",
             "STOP_MESSAGE": "Goodbye!",
             "RECIPE_REPEAT_MESSAGE": "Try saying repeat.",
-            "RECIPE_NOT_FOUND_MESSAGE": "I\'m sorry, I currently do not know ",
-            "RECIPE_NOT_FOUND_WITH_ITEM_NAME": "where to locate %s. ",
-            "RECIPE_NOT_FOUND_WITHOUT_ITEM_NAME": "that. ",
+            "RECIPE_NOT_FOUND_MESSAGE": "I\'m sorry, I don't know. Maybe that wasn\'t an Olympic year ",
+            "RECIPE_NOT_FOUND_WITH_ITEM_NAME": ", %s . ",
+            "RECIPE_NOT_FOUND_WITHOUT_ITEM_NAME": ". ",
             "RECIPE_NOT_FOUND_REPROMPT": "What else can I help with?"
         }
     },
