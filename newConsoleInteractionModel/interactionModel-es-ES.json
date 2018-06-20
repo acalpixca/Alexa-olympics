@@ -1,0 +1,44 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "ciudades olímpicas no oficial",
+            "intents": [
+                {
+                    "name": "RecipeIntent",
+                    "slots": [
+                        {
+                            "name": "Item",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "dónde se celebraron los juegos de {Item}",
+                        "dónde fueron los juegos de {Item}",
+                        "dónde se celebraron los juegos olímpicos de {Item}",
+                        "dónde fueron los juegos olímpicos de {Item}",
+                        "dónde se celebraron los juegos en {Item}",
+                        "dónde fueron los juegos en {Item}",
+                        "{Item}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                }
+            ],
+            "types": []
+        }
+    }
+}

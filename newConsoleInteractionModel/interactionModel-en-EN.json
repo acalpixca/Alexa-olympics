@@ -1,0 +1,44 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "unofficial olympic cities",
+            "intents": [
+                {
+                    "name": "RecipeIntent",
+                    "slots": [
+                        {
+                            "name": "Item",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "where did the {Item} olympics take place",
+                        "where did the {Item} olympics happen",
+                        "where did the {Item} games take place",
+                        "where did the {Item} games happen",
+                        "which city hosted the {Item} olympics",
+                        "which city hosted the {Item} games",
+                        "{Item}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                }
+            ],
+            "types": []
+        }
+    }
+}

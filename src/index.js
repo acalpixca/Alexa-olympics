@@ -27,7 +27,7 @@ var handlers = {
         this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech'])
     },
     'RecipeIntent': function () {
-		
+
 		/*
 		    var slotValue = this.event.request.intent.slots.date.value;
     var dateRange = new AmazonDateParser(slotValue);
@@ -107,6 +107,23 @@ var languageStrings = {
             "RECIPE_NOT_FOUND_WITH_ITEM_NAME": ", %s. ",
             "RECIPE_NOT_FOUND_WITHOUT_ITEM_NAME": ".",
             "RECIPE_NOT_FOUND_REPROMPT": "What else can I help with?"
+        }
+    },
+    "es": {
+        "translation": {
+            "RECIPES": recipes.RECIPE_ES_ES,
+            "SKILL_NAME": "Ciudades Olímpicas No Oficial",
+            "WELCOME_MESSAGE": "Bienvenidos a %s. ¿Quieres saber dónde se celebraron los juegos olímpicos en un año concreto? Pregúntame, ¿dónde se celebraron los juegos de 1992? Espero tu pregunta.  ",
+            "WELCOME_REPROMPT": "Si necesitas ayuda, por favor di ayuda.",
+            "DISPLAY_CARD_TITLE": "%s  - Ciudad anfitriona en %s.",
+            "HELP_MESSAGE": "Me puedes preguntar, dónde se celebraron los juegos olímpicos de 1992, o para salir puedes decir salir... ¿En qué te puedo ayudar?",
+            "HELP_REPROMPT": "Me puedes preguntar, dónde se celebraron los juegos olímpicos de 1992, o para salir puedes decir salir... ¿En qué te puedo ayudar?",
+            "STOP_MESSAGE": "¡Hasta la próxima!",
+            "RECIPE_REPEAT_MESSAGE": "Intenta decir repite.",
+            "RECIPE_NOT_FOUND_MESSAGE": "No lo sé, lo siento. ¿Quizás ese no fue un año olímpico?",
+            "RECIPE_NOT_FOUND_WITH_ITEM_NAME": ", %s. ",
+            "RECIPE_NOT_FOUND_WITHOUT_ITEM_NAME": ".",
+            "RECIPE_NOT_FOUND_REPROMPT": "¿En qué te puedo ayudar?"
         }
     },
     "en-US": {
